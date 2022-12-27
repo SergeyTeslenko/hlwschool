@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>SVG</title>
+  <style type="text/css">
+  	svg{
+  		border: 1px solid black;
+  	}
+  	.home line{
+  		stroke: black;
+  		stroke-width:2px;
+  	}
+  </style>
+</head>
+
+<body>
+  <svg width="400" height="400">
+  	<!-- большой круг -->
+    <circle cx="200" cy="200" r="180" fill="#ffc107"/>
+    <!-- левый глаз -->
+    <circle cx="120" cy="140" r="20" fill="#999"/>
+    <!-- правый глаз -->
+    <circle cx="280" cy="140" r="20" fill="#999"/>
+    <!-- рот -->
+    <rect x="120" y="240" width="160" height="30" fill="#999" rx="10"/>
+  </svg>
+  <svg width="400" height="400" class="home">
+  	<polygon points="0,150 200,0 400,150" fill="brown" />
+  	<rect x="0" y="150" width="400" height="250"/ fill="green" />
+  	<circle cx="200" cy="75" r="50" fill="#A2A5C4" stroke="black" stroke-width="2" />
+  	<line x1="200" y1="25" x2="200" y2="125" />
+  	<line x1="150" y1="75" x2="250" y2="75" />
+  	<rect x="50" y="200" width="100" height="100" fill="#A2A5C4"/>
+  	<rect x="250" y="200" width="150" height="200" fill="grey" />
+  	<ellipse cx="275" cy="300" rx="10" ry="4" />
+  </svg>
+
+
+
+  <svg width="400" height="400">
+    <!-- Верх машины -->
+    <polygon points="10,110 100,10 350,10 390,110"/>
+    <!-- Тело -->
+   <rect x="0" y="100" width="400" height="80" fill="crimson" rx="30" />
+    <!-- Граница дверей -->
+    <line x1="200" y1="10" x2="200" y2="180" stroke="green" stroke-width="2" />
+    <!-- Левый бампер -->
+    <!-- <rect x="0" y="110" width="40" height="20" fill="#999" rx="10" /> -->
+    <!-- Правый бампер -->
+    <!-- <rect x="325" y="110" width="40" height="20" fill="#999" rx="10" /> -->
+    <!-- Левое колесо -->
+    <circle r="40" fill="#222" stroke="white" stroke-width="7" cx="60" cy="200" />
+    <circle r="15" fill="#555" cx="60" cy="200" />
+    <!-- Правое колесо -->
+    <circle r="40" fill="#222" stroke="white" stroke-width="7" cx="325" cy="200" />
+    <circle r="15" fill="#555" cx="325" cy="200" />
+    <!-- Фара передняя -->
+    <!-- <circle r="15px" fill="gold" cx="340" cy="90" /> -->
+    <!-- Фара задняя -->
+    <!-- <circle r="10px" fill="orange" cx="15" cy="90" /> -->
+  </svg>
+</body>
+
+</html>

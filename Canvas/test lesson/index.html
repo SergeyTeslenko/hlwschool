@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Line stroke stroke width -->
+    <div class="task__container">
+        <h2>1</h2>
+        <p>Ниже должен располагаться SVG элемент линия красного цвета</p>
+        <svg width="200px" height="100px">
+            <line x1="0" y1="0" x2="100" y2="100" stroke-width="3" stroke="red"></line>
+        </svg>
+    </div>
+
+      <!-- rect fill -->
+    <div class="task__container">
+        <h2>2</h2>
+        <p>Ниже должен располагаться SVG элемент прямоугольник серого цвета с зеленой обводкой шириной 200 высотой 100</p>
+        <svg width="200px" height="100px">
+            <rect width="200" height="100" stroke="green" stroke-width="2" fill="#c9c9c9"/> 
+        </svg>
+    </div>
+    <!-- circle cx cy r-->
+    <div class="task__container">
+        <h2>3</h2>
+        <p>Ниже должен располагаться SVG элемент круг c радиусом в 50 и в расположенный центре svg родителя</p>
+        <svg width="200px" height="200px">
+            <circle cx="100" cy ="100" r="50" fill = 'black'></circle>
+        </svg>
+    </div>
+    
+  <!-- circle ry rx-->
+    <div class="task__container">
+        <h2>4</h2>
+        <p>Ниже должен располагаться SVG элемент овал. С шириной в 2 раза больше чем высота. И зеленого цвета</p>
+        <svg width="200px" height="100px">
+            <ellipse cx="100" cy="50" rx="100" ry="50" fill="green" />
+        </svg>
+    </div>
+    
+    <!-- polyline-->
+    <div class="task__container">
+        <h2>5</h2>
+        <p>Ниже должен располагаться SVG элемент равнобедренный треугольник шириной в 100% от родительского svg</p>
+        <svg width="200px" height="100px">
+            <polyline points="0,100 100,0 200,100" fill="blue">
+        </svg>
+    </div>
+
+     <!--image href-->
+     <div class="task__container ">
+        <h2>6</h2>
+        <p>Ниже должен располагаться SVG голова персонажа загруженная через специальны тег изображения</p>
+        <svg width="200px" height="200px">
+            <image x="0" y="0" href="task6.png" height='200'/>
+        </svg>
+    </div>
+    <!--setAtribute-->
+    <div class="task__container">
+        <h2>7</h2>
+        <p>Ниже должен располагаться SVG круг, у которого зациклена анимация смены цвета. Анимация задается через скрипт</p>
+        <svg width="200px" height="200px">
+            <circle  class="task7" cx="100" cy ="100" r="100"></circle>
+        </svg>
+    </div>
+
+      <!--SVG JS cоздание объектов с помощью SVG JS-->
+      <div class="task__container task8">
+        <h2>8</h2>
+        <p>Ниже должен располагаться SVG элемент. В котором находится серый квадрат. ПО центру квадрата располагается черный круг. Все это нарисованно
+            с помощью библиотеки SVG js. Код находится в нашем скрипте
+        </p>
+        <div class="frame" id = "frame"></div>
+    </div>
+
+          <!--Canvas, context fillrect  canvas.strokeStyle beginPath()  lineWidth-->
+          <div class="task__container task8">
+            <h2>9</h2>
+            <p>
+                Ниже располагается canvas элемент. Сгеренерованный через скрипт имеющий фиолетовый цвет. Внутри него находится круглое оранжевое кольцо, 
+                так же созданное с помощью canvas. Толшина обводки 10 px. А само кольцо располагается в центре родительского элемента
+            </p>
+            <div class="canvasFrame1">
+                <canvas id="canvas1" width="400" height="400"></canvas>
+            </div>
+        </div>
+
+    <script src="svg.js/svg.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
